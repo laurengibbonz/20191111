@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>02a forEach</title>
+</head>
+<body>
+
+  <div id="demo"></div>
+
+<script>
+  let animals = ['cat', 'dog', 'cow', 'bird'];
+
+  function output(item, index) {
+    document.getElementById("demo").innerHTML += `${index}: ${item}<br>`;
+  }
+
+  //Original loop with for
+  // for(let i = 0; i < animals.length; i++) {
+  //   output(animals[i], i);
+  // }
+
+  // animals.forEach(output);
+
+  // animals.forEach((item, index) => {
+  //   document.getElementById("demo").innerHTML += `${index}: ${item}<br>`;
+  // });
+</script>
+
+</body>
+</html>
